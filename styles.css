@@ -1,11 +1,11 @@
 section {
   height: 500px;
-  background-color: yellow;
+  background-color: white;
   border: solid black 1px;
 }
 
 .hero {
-  background-color: blue;
+  background-color: #1c1d25;
   height: 100vh;
 }
 
