@@ -3,9 +3,7 @@ body {
 }
 
 section {
-  height: 500px;
   background-color: white;
-  border: solid black 1px;
 }
 
 .hero {
@@ -16,9 +14,11 @@ section {
 }
 
 footer {
-  height: 500px;
-
+  padding: 80px;
+  color: white;
   background-color: black;
+  font-size: 40px;
+  text-align: center;
 }
 
 nav {
@@ -43,10 +43,18 @@ h1 {
   font-size: 90px;
   margin-bottom: 0%;
 }
+h2 {
+  font-size: 50px;
+}
 
 p {
   margin: 0;
   font-size: 30px;
+  font-weight: 300;
+}
+
+.subtext {
+  font-size: 15px;
   font-weight: 300;
 }
 .hero-area {
@@ -89,4 +97,61 @@ p {
 
 .social {
   margin: 20px;
+}
+
+.sub-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+}
+.sub-section-alternative {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+.headshot {
+  width: 300px;
+  border-radius: 200px;
+}
+.headshot-container {
+  display: flex;
+  align-items: center;
+}
+
+.project-card {
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 20px grey;
+  margin: 10px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px){
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.project-image {
+  margin-top: 25px;
+  width: 300px;
+  border-radius: 125px;
+}
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #ef744b;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
