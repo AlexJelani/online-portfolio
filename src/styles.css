@@ -47,11 +47,27 @@ h1 {
 h2 {
   font-size: 50px;
 }
+h1.contact {
+  font-family: 'Playfair Display', serif;
+  font-size: 59px;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
 
 p {
   margin: 0;
   font-size: 30px;
   font-weight: 300;
+}
+
+p.contact-two {
+  color: #d2d2d2;
+
+}
+p.input.textarea.label {
+  font-family: "Poppins", sans-serif;
+
 }
 
 .subtext {
@@ -116,7 +132,7 @@ p {
   border-radius: 200px;
   margin-left: 80px;
 }
-}
+
 .headshot-container {
   display: flex;
   align-items: center;
@@ -195,4 +211,21 @@ a {
   .logo {
     display: none;
   }
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 0;
+}
+
+input.textarea.label {
+  display: block;
+  margin: 0 auto;
 }
