@@ -267,3 +267,14 @@ input:focus, textarea:focus {
   outline: 1px solid #828282;
 
 }
+
+a {
+
+  color: #828282;
+  font-style: italic;
+
+}
+
+a:hover {
+  color: #fff;
+}
