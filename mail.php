@@ -1,17 +1,38 @@
 <?php
+if(isset($_POST['email']) && $_POST['email'] != ''){
+  // submit form 
+  
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $message = $_POST['message'];
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+  $to = "jelanialexander82@gmail.com";
+  $body = "";
 
-$mailheader = "From:" .$name. "<" .$email. ">\r\n";
+  $body .= "From: ".$name. "\r\n";
+  $body .= "Email: ".$email. "\r\n";
+  $body .= "Subject: ".$subject. "\r\n";
+  $body .= "Message: ".$message. "\r\n";
 
 
-$recipient = "jelanialexander82@gmail.com";
+  mail($to, $subject, $body);
 
-mail($recipient, $subject, $message, $mailheader)
-or die("Error!");
+}
+
+
+
+
+// $mailheader = "From:".$name."<".$email.">\r\n";
+
+
+// $recipient = "jelanialexander82@gmail.com";
+
+// $success = mail($recipient, $subject, $message, $mailheader);
+// if(!$success) {
+//   $errorMessage = error_get_last()['message'];
+// }
+
 
 
 
@@ -46,7 +67,6 @@ echo '
 
 
 ';
-
 
 
 ?>
