@@ -11,7 +11,11 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
   $subject = $_POST['subject'];
   $message = $_POST['message'];
 
+<<<<<<< HEAD
   $to = "j-alexander@kaiyo.ac.jp";
+=======
+  $to = "jelanialexander82@gmail.com";
+>>>>>>> ecc95779c58ac1836f3ea019fd01c2e1d763e111
   $body = "";
 
   $body .= "From: ".$name. "\r\n";
@@ -20,7 +24,11 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
   $body .= "Message: ".$message. "\r\n";
 
 
+<<<<<<< HEAD
   mail($to, $subject, $body);
+=======
+  // mail($to, $subject, $body);
+>>>>>>> ecc95779c58ac1836f3ea019fd01c2e1d763e111
 
   if($message_sent = true) {
 
