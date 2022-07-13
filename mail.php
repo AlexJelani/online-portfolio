@@ -1,7 +1,11 @@
 <?php
+$message_sent = false;
+
 if(isset($_POST['email']) && $_POST['email'] != ''){
   // submit form 
-  
+
+  if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+
   $name = $_POST['name'];
   $email = $_POST['email'];
   $subject = $_POST['subject'];
@@ -16,7 +20,13 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
   $body .= "Message: ".$message. "\r\n";
 
 
-  mail($to, $subject, $body);
+  // mail($to, $subject, $body);
+
+  $message_sent = true;
+
+  }
+  
+  
 
 }
 
