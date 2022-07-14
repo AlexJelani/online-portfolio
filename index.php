@@ -1,9 +1,4 @@
-<?php
-        //check for submit
-        if(filter_has_var(INPUT_POST, 'submit')){
-          echo 'Submitted';
-        }
-      ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Poppins:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel='stylesheet' href="https://bootswatch.com/cosmo/bootstrap.min.css">
   <title>Portfolio</title>
 </head>
 <body>
@@ -101,20 +97,23 @@
   </section>
   <footer id="contact-me">
     <div class="container">
-      
+    
       <h1 class="contact">Contact me</h1>
       <p class="contact-two">Feel free to contact me!</p>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>"
-      method="post">
+
+
+    <form action="mail.php"      method="post" >
         <label for="name">Name</label> <input type="text" name="name" id="name"> 
         <label for="email">Email:</label> <input type="email" name="email" id="email"> 
         <label for="subject">Subject:</label> <input type="text" name="subject" id="subject">
          <label for="message">Message</label> 
-        <textarea name="message" id="message" cols="30" rows="10"></textarea> <input type="submit" value="Send">
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+         <input type="submit" name="submit" value="submit">
       </form>
     </div>
     <p>Contact me</p>
     <p>jelanialexander82@gmail.com</p>
+    
   </footer>
   <script src="src/app.js"></script>
 </body>
