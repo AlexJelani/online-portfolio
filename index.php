@@ -1,3 +1,9 @@
+<?php
+        //check for submit
+        if(filter_has_var(INPUT_POST, 'submit')){
+          echo 'Submitted';
+        }
+      ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,12 +101,7 @@
   </section>
   <footer id="contact-me">
     <div class="container">
-      <?php
-        //check for submit
-        if(filter_has_var(INPUT_POST, 'submit')){
-          echo 'Submitted';
-        }
-      ?>
+      
       <h1 class="contact">Contact me</h1>
       <p class="contact-two">Feel free to contact me!</p>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>"
