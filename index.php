@@ -95,10 +95,20 @@
   </section>
   <footer id="contact-me">
     <div class="container">
+      <?php
+        //check for submit
+        if(filter_has_var(INPUT_POST, 'submit')){
+          echo 'Submitted';
+        }
+      ?>
       <h1 class="contact">Contact me</h1>
       <p class="contact-two">Feel free to contact me!</p>
-      <form action="mail copy.php" method="post">
-        <label for="name">Name</label> <input type="text" name="name" id="name"> <label for="email">Email:</label> <input type="email" name="email" id="email"> <label for="subject">Subject:</label> <input type="text" name="subject" id="subject"> <label for="message">Message</label> 
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>"
+      method="post">
+        <label for="name">Name</label> <input type="text" name="name" id="name"> 
+        <label for="email">Email:</label> <input type="email" name="email" id="email"> 
+        <label for="subject">Subject:</label> <input type="text" name="subject" id="subject">
+         <label for="message">Message</label> 
         <textarea name="message" id="message" cols="30" rows="10"></textarea> <input type="submit" value="Send">
       </form>
     </div>
