@@ -196,3 +196,14 @@ a {
     display: none;
   }
 }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 43px;
+
+}
+.switch input {
+  display: none;
+}
