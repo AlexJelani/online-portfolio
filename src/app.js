@@ -15,7 +15,7 @@ var data = {
 
 
 const langEL = document.querySelector('.langWrap');
-const link = document.querySelectorAll('a');
+const link = document.querySelectorAll('#button_lang');
 const nameEL = document.querySelector('.name');
 const titleEL = document.querySelector('.job');
 

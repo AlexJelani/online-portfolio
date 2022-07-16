@@ -196,13 +196,15 @@ a {
     display: none;
   }
 }
- .langWrap a {
+ #button_lang {
   display: flex;
-  padding: 0 15px;
+  padding: 8px 15px;
   background: #555656;
   justify-content: space-between;
+  border-radius: 5px;
+  cursor: pointer;
   
 }
-a.active {
+#button_lang.active {
   background: #f21313;
 }
