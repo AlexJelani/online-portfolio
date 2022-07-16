@@ -116,7 +116,7 @@ p {
   border-radius: 200px;
   margin-left: 80px;
 }
-}
+
 .headshot-container {
   display: flex;
   align-items: center;
@@ -196,4 +196,13 @@ a {
     display: none;
   }
 }
-
+ .langWrap a {
+  display: flex;
+  padding: 0 15px;
+  background: #555656;
+  justify-content: space-between;
+  
+}
+a.active {
+  background: #f21313;
+}
