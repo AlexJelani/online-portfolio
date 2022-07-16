@@ -1,9 +1,11 @@
 var data = {
   "english": {
-    "name": "Jelani Alexander"
+    "name": "Jelani Alexander",
+    "job": "Full Stack Developer"
   },
   "japanese": {
-    "name": "ジェラーニ　アレキサンダー"
+    "name": "ジェラーニ　アレキサンダー",
+    "job": "フルスタックエンジニア"
   }
 
 
@@ -15,6 +17,8 @@ var data = {
 const langEL = document.querySelector('.langWrap');
 const link = document.querySelectorAll('a');
 const nameEL = document.querySelector('.name');
+const titleEL = document.querySelector('.job');
+
 
 link.forEach(el => {
   el.addEventListener('click', () => {
@@ -25,6 +29,7 @@ link.forEach(el => {
     const attr = el.getAttribute('language');
 
     nameEL.textContent = data[attr].name;
+    titleEL.textContent = data[attr].job;
   });
 });
 
