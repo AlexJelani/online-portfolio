@@ -5,7 +5,7 @@ var data = {
     "about": "About me"
   },
   "japanese": {
-    "name": "ジェラーニ　アレキサンダー",
+    "name": "アレキサンダー ジェラーニ　",
     "job": "フルスタックエンジニア",
     "about": "私について"
   }
