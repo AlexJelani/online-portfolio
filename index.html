@@ -19,19 +19,19 @@
       <ul id="nav-list">
         
         <li>
-          <a href="#about-me">About me</a>
+          <a class="lang" key="ABOUT" href="#about-me">About me</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a class="lang" key="PROJECT" href="#projects">Projects</a>
         </li>
         <li>
-          <a href="#contact-me">Contact</a>
+          <a class="lang" key="CONTACT" href="#contact-me">Contact</a>
         </li>
         <!-- How-to-switch-language-by-toggle-button stackoverflow -->
           <div class="container">
             <div class="langWrap">
-              <li language='english' id="button_lang"    class="active">ENG</li>
-            <li language='japanese' id="button_lang">JP</li>
+              <li class="translate inactive" id="en-gb">ENG</li>
+            <li class="translate inactive" id="zh-tw">JP</li>
             </div>
           </div>
       </ul>
@@ -42,8 +42,8 @@
     </nav>
     <div class="hero-area">
       <div class="hero-text">
-        <h1 class="name">Jelani Alexander</h1>
-        <p class="job">Full Stack Developer</p>
+        <h1 class="lang name" key="NAME">Jelani Alexander</h1>
+        <p class="lang job" key="JOB">Full Stack Developer</p>
         <div class="button">
           <a class="about"   href="#about-me">About me</a>
         </div>

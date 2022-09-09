@@ -1,42 +1,45 @@
-var data = {
-  "english": {
-    "name": "Jelani Alexander",
-    "job": "Full Stack Developer",
-    "about": "About me"
+//TODO
+
+//Change Jquery to here https://codepen.io/erikkjon88/pen/MGWzwV
+//add active button to languagechange button https://stackoverflow.com/questions/41476916/jquery-make-pressed-button-active-and-all-other-buttons-inactive
+//Add email to main by merge
+
+
+
+var arrLang = {
+  "en-gb": {
+    ABOUT: "About me",
+    PROJECT: "Projects",
+    CONTACT: "Contact",
+    NAME: "Jelani Alexander"
   },
-  "japanese": {
-    "name": "アレキサンダー ジェラーニ　",
-    "job": "フルスタックエンジニア",
-    "about": "私について"
+  "zh-tw": {
+    ABOUT: "ホーム",
+    PROJECT: "プロジェクト",
+    CONTACT: "連絡",
+    NAME: "アレキサンダー　ジェラーニ"
   }
+};
 
-
-
-
-}
-
-
-const langEL = document.querySelector('.langWrap');
-const link = document.querySelectorAll('#button_lang');
-const nameEL = document.querySelector('.name');
-const titleEL = document.querySelector('.job');
-const aboutEL = document.querySelector('.about');
-
-
-
-link.forEach(el => {
-  el.addEventListener('click', () => {
-    langEL.querySelector('.active').classList.remove('active');
-
-    el.classList.add('active');
-
-    const attr = el.getAttribute('language');
-
-    nameEL.textContent = data[attr].name;
-    titleEL.textContent = data[attr].job;
-    aboutEL.textContent = data[attr].about;
+$(document).ready(function () {
+  // The default language is English
+  var lang = "en-gb";
+  $(".lang").each(function (index, element) {
+    $(this).text(arrLang[lang][$(this).attr("key")]);
   });
 });
+
+// get/set the selected language
+$(".translate").click(function () {
+  var lang = $(this).attr("id");
+  $(".translate").removeClass("active").addClass("inactive");
+  $(this).removeClass("inactive").addClass("active");
+
+  $(".lang").each(function (index, element) {
+    $(this).text(arrLang[lang][$(this).attr("key")]);
+  });
+});
+
 
 
 

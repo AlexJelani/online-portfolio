@@ -196,15 +196,19 @@ a {
     display: none;
   }
 }
- #button_lang {
+ .inactive {
   display: flex;
   padding: 8px 15px;
   background: #555656;
   justify-content: space-between;
   border-radius: 5px;
   cursor: pointer;
+  gap: 2px;
   
 }
-#button_lang.active {
+/* .translate.active {
   background: #f21313;
-}
+} */
+
+.active{background:green}
+.inactive{background:red}
