@@ -13,6 +13,7 @@ var arrLang = {
     CONTACT: "Contact",
     NAME: "Jelani Alexander",
     JOB:"Full Stack Developer",
+    //can add lots of data
     ABOUTME:""
     
   },
@@ -22,6 +23,7 @@ var arrLang = {
     CONTACT: "連絡",
     NAME: "アレキサンダー　ジェラーニ",
     JOB:"フルスタックエンジニア",
+    //cant add lots of data
     ABOUTME:""
   }
 };
