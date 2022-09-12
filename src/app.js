@@ -14,7 +14,7 @@ var arrLang = {
     NAME: "Jelani Alexander",
     JOB:"Full Stack Developer",
     //can add lots of data
-    ABOUTME:""
+    ABOUTME:"Hello. My name is Jelani Alexander. I am a Software Developer with a passion for developing user friendly applications using frontend and backend technologies."
     
   },
   "zh-tw": {
@@ -24,7 +24,7 @@ var arrLang = {
     NAME: "アレキサンダー　ジェラーニ",
     JOB:"フルスタックエンジニア",
     //cant add lots of data
-    ABOUTME:""
+    ABOUTME:"こんにちは。私の名前はジェラニ・アレクサンダーです。私はユーザーフレンドリーなアプリケーションを開発することに情熱を持っているソフトウェア開発者ですフロントエンドとバックエンドのテクノロジーを使用します。"
   }
 };
 
