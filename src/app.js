@@ -11,13 +11,18 @@ var arrLang = {
     ABOUT: "About me",
     PROJECT: "Projects",
     CONTACT: "Contact",
-    NAME: "Jelani Alexander"
+    NAME: "Jelani Alexander",
+    JOB:"Full Stack Developer",
+    ABOUTME:""
+    
   },
   "zh-tw": {
-    ABOUT: "ホーム",
+    ABOUT: "私について",
     PROJECT: "プロジェクト",
     CONTACT: "連絡",
-    NAME: "アレキサンダー　ジェラーニ"
+    NAME: "アレキサンダー　ジェラーニ",
+    JOB:"フルスタックエンジニア",
+    ABOUTME:""
   }
 };
 
