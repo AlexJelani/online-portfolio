@@ -4,28 +4,27 @@
 //add active button to languagechange button https://stackoverflow.com/questions/41476916/jquery-make-pressed-button-active-and-all-other-buttons-inactive
 //Add email to main by merge
 
-
-
 var arrLang = {
   "en-gb": {
     ABOUT: "About me",
     PROJECT: "Projects",
     CONTACT: "Contact",
     NAME: "Jelani Alexander",
-    JOB:"Full Stack Developer",
+    JOB: "Full Stack Developer",
     //can add lots of data
-    ABOUTME:"Hello. My name is Jelani Alexander. I am a Software Developer with a passion for developing user friendly applications using frontend and backend technologies."
-    
+    ABOUTME:
+      "Hello. My name is Jelani Alexander. I am a Software Developer with a passion for developing user friendly applications using frontend and backend technologies.",
   },
   "zh-tw": {
     ABOUT: "私について",
     PROJECT: "プロジェクト",
     CONTACT: "連絡",
     NAME: "アレキサンダー　ジェラーニ",
-    JOB:"フルスタックエンジニア",
+    JOB: "フルスタックエンジニア",
     //cant add lots of data
-    ABOUTME:"こんにちは。私の名前はジェラニ・アレクサンダーです。私はユーザーフレンドリーなアプリケーションを開発することに情熱を持っているソフトウェア開発者ですフロントエンドとバックエンドのテクノロジーを使用します。"
-  }
+    ABOUTME:
+      "こんにちは。私の名前はジェラニ・アレクサンダーです。私はユーザーフレンドリーなアプリケーションを開発することに情熱を持っているソフトウェア開発者ですフロントエンドとバックエンドのテクノロジーを使用します。",
+  },
 };
 
 $(document).ready(function () {
@@ -47,14 +46,40 @@ $(".translate").click(function () {
   });
 });
 
-
-
-
 const hamburgerButton = document.getElementById("hamburger");
 const navList = document.getElementById("nav-list");
 
 function toggleButton() {
-  navList.classList.toggle('show')
+  navList.classList.toggle("show");
 }
 
-hamburgerButton.addEventListener('click', toggleButton)
+hamburgerButton.addEventListener("click", toggleButton);
+
+// // ********** adjustable navbar ************
+// const hamburgerButton = document.getElementById("hamburger");
+// const linksContainer = document.querySelector()
+// const navList = document.getElementById("nav-list");
+
+// hamburgerButton.addEventListener("click", function () {
+//    const containerHeight = linksContainer.getBoundingClientRect().height;
+//    const linksHeight = links.getBoundingClientRect().height;
+//      if(containerHeight === 0) {
+//        linksContainer.style.height = `${linksHeight}px`;
+//     } else {
+//       linksContainer.style.height = 0;
+//     }
+//  });
+// const navToggle = document.querySelector(".nav-toggle");
+// const linksContainer = document.querySelector(".links-container");
+// const links = document.querySelector(".links");
+
+
+// navToggle.addEventListener("click", function () {
+//   const containerHeight = linksContainer.getBoundingClientRect().height;
+//   const linksHeight = links.getBoundingClientRect().height;
+//   if(containerHeight === 0) {
+//     linksContainer.style.height = `${linksHeight}px`;
+//   } else {
+//     linksContainer.style.height = 0;
+//   }
+// });
