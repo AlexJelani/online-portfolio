@@ -10,9 +10,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+<<<<<<< HEAD
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Poppins:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+=======
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+>>>>>>> translation-tab
   <title>Portfolio</title>
 </head>
 <body>
@@ -20,26 +24,42 @@
     <nav>
       <img class="logo" src="src/images/JA-logos_white.png" alt="Jelani Alexander's logo">
       <ul id="nav-list">
+        
         <li>
-          <a href="#about-me">About me</a>
+          <a class="lang" key="ABOUT" href="#about-me">About me</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a class="lang" key="PROJECT" href="#projects">Projects</a>
         </li>
         <li>
-          <a href="#contact-me">Contact</a>
+          <a class="lang" key="CONTACT" href="#contact-me">Contact</a>
         </li>
+<<<<<<< HEAD
         <div class="langWrap">
           <a href="#" language="english">EN</a> <a href="#" language="english">JP</a>
         </div>
       </ul><button class="hamburger" id="hamburger"></button>
+=======
+        <!-- How-to-switch-language-by-toggle-button stackoverflow -->
+          <div class="container">
+            <div class="langWrap">
+              <button class="translate active" id="en-gb">ENG</button>
+            <button class="translate inactive" id="zh-tw">JP</button>
+            </div>
+          </div>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+
+      </button>
+>>>>>>> translation-tab
     </nav>
     <div class="hero-area">
       <div class="hero-text">
-        <h1>Jelani Alexander</h1>
-        <p>Full Stack Developer</p>
+        <h1 class="lang name" key="NAME">Jelani Alexander</h1>
+        <p class="lang job" key="JOB">Full Stack Developer</p>
         <div class="button">
-          <a href="#about-me">About me</a>
+          <a class="lang about" key="ABOUT"  href="#about-me">About me</a>
         </div>
       </div>
       <div class="socials">
@@ -56,18 +76,19 @@
   </section>
   <section class="sub-section" id="about-me">
     <div class="information">
-      <h2>About me</h2>
-      <p>Hello. My name is Jelani Alexander. I am a Software Developer with a passion for developing user friendly applications.</p>
+      <h2 class="lang" key="ABOUT">About me</h2>
+      <p class="lang" key="ABOUTME">Hello. My name is Jelani Alexander. I am a Software Developer with a passion for developing user friendly applications 
+        using frontend and backend technologies.</p>
     </div>
     <div class="headshot-container"><img class="headshot" src="src/images/jelaniAlexander.jpg" alt="Jelani Alexander headshot"></div>
   </section>
   <section class="sub-section-alternative" id="projects">
-    <h2>Projects</h2>
+    <h2 class="lang"  key="PROJECT">Projects</h2>
     <div class="project-container">
       <div class="project-card">
         <img class="project-image" src="" alt="Project One Image">
-        <h3>Project One</h3>
-        <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+        <h3>Portfolio Site</h3>
+        <p class="subtext">This is my project was made utilizing HTML5, CSS, jquery and JavaScript. I enjoyed making this project.</p>
         <hr>
         <p class="subtext"><a class="project-link" href="https://github.com/AlexJelani">View here</a></p>
       </div>
